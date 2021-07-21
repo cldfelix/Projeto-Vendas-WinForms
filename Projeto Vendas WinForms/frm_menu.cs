@@ -31,5 +31,10 @@ namespace Projeto_Vendas_WinForms
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

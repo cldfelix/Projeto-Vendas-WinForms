@@ -29,12 +29,14 @@ namespace Projeto_Vendas_WinForms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_menu));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_cad_produto = new System.Windows.Forms.Button();
+            this.btn_cad_categoria = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -42,7 +44,6 @@ namespace Projeto_Vendas_WinForms
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Image = global::Projeto_Vendas_WinForms.Properties.Resources.vendas3;
             this.pictureBox1.Location = new System.Drawing.Point(0, 24);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(800, 426);
@@ -73,13 +74,13 @@ namespace Projeto_Vendas_WinForms
             // produtosToolStripMenuItem
             // 
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.produtosToolStripMenuItem.Text = "Produtos";
             // 
             // categoriasToolStripMenuItem
             // 
             this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
-            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.categoriasToolStripMenuItem.Text = "Categorias";
             // 
             // btn_cad_produto
@@ -92,7 +93,7 @@ namespace Projeto_Vendas_WinForms
             this.btn_cad_produto.ForeColor = System.Drawing.Color.DimGray;
             this.btn_cad_produto.Image = global::Projeto_Vendas_WinForms.Properties.Resources.cad_produtos_40x40;
             this.btn_cad_produto.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_cad_produto.Location = new System.Drawing.Point(40, 349);
+            this.btn_cad_produto.Location = new System.Drawing.Point(12, 48);
             this.btn_cad_produto.Name = "btn_cad_produto";
             this.btn_cad_produto.Size = new System.Drawing.Size(140, 72);
             this.btn_cad_produto.TabIndex = 2;
@@ -101,12 +102,32 @@ namespace Projeto_Vendas_WinForms
             this.btn_cad_produto.UseVisualStyleBackColor = false;
             this.btn_cad_produto.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btn_cad_categoria
+            // 
+            this.btn_cad_categoria.BackColor = System.Drawing.Color.Transparent;
+            this.btn_cad_categoria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_cad_categoria.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_cad_categoria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_cad_categoria.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_cad_categoria.ForeColor = System.Drawing.Color.DimGray;
+            this.btn_cad_categoria.Image = ((System.Drawing.Image)(resources.GetObject("btn_cad_categoria.Image")));
+            this.btn_cad_categoria.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_cad_categoria.Location = new System.Drawing.Point(175, 48);
+            this.btn_cad_categoria.Name = "btn_cad_categoria";
+            this.btn_cad_categoria.Size = new System.Drawing.Size(140, 72);
+            this.btn_cad_categoria.TabIndex = 3;
+            this.btn_cad_categoria.Text = "Cadastrar Categorias";
+            this.btn_cad_categoria.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_cad_categoria.UseVisualStyleBackColor = false;
+            this.btn_cad_categoria.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // frm_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_cad_categoria);
             this.Controls.Add(this.btn_cad_produto);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
@@ -129,6 +150,7 @@ namespace Projeto_Vendas_WinForms
         private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem categoriasToolStripMenuItem;
         private System.Windows.Forms.Button btn_cad_produto;
+        private System.Windows.Forms.Button btn_cad_categoria;
     }
 }
 
