@@ -17,24 +17,28 @@ namespace Projeto_Vendas_WinForms
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void btn_cad_produto_Click(object sender, EventArgs e)
         {
-
+            var frm = new frm_cadastro_produtos();
+            frm.Show();
         }
 
-        private void cadastrosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btn_cad_categoria_Click(object sender, EventArgs e)
         {
-
+            var frm = new frm_cadastro_categoria();
+            frm.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var frm = new frm_cadastro_produtos();
+            frm.Show();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void categoriasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var frm = new frm_cadastro_categoria();
+            frm.Show();
         }
     }
 }

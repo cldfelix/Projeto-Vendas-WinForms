@@ -49,7 +49,6 @@ namespace Projeto_Vendas_WinForms
             this.pictureBox1.Size = new System.Drawing.Size(800, 426);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // menuStrip1
             // 
@@ -69,19 +68,20 @@ namespace Projeto_Vendas_WinForms
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.cadastrosToolStripMenuItem.Text = "Cadastros";
-            this.cadastrosToolStripMenuItem.Click += new System.EventHandler(this.cadastrosToolStripMenuItem_Click);
             // 
             // produtosToolStripMenuItem
             // 
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
             this.produtosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.produtosToolStripMenuItem.Text = "Produtos";
+            this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
             // 
             // categoriasToolStripMenuItem
             // 
             this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
             this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.categoriasToolStripMenuItem.Text = "Categorias";
+            this.categoriasToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
             // 
             // btn_cad_produto
             // 
@@ -100,7 +100,7 @@ namespace Projeto_Vendas_WinForms
             this.btn_cad_produto.Text = "Cadastrar Produtos";
             this.btn_cad_produto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_cad_produto.UseVisualStyleBackColor = false;
-            this.btn_cad_produto.Click += new System.EventHandler(this.button1_Click);
+            this.btn_cad_produto.Click += new System.EventHandler(this.btn_cad_produto_Click);
             // 
             // btn_cad_categoria
             // 
@@ -119,7 +119,7 @@ namespace Projeto_Vendas_WinForms
             this.btn_cad_categoria.Text = "Cadastrar Categorias";
             this.btn_cad_categoria.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_cad_categoria.UseVisualStyleBackColor = false;
-            this.btn_cad_categoria.Click += new System.EventHandler(this.button1_Click_1);
+            this.btn_cad_categoria.Click += new System.EventHandler(this.btn_cad_categoria_Click);
             // 
             // frm_menu
             // 
@@ -133,6 +133,7 @@ namespace Projeto_Vendas_WinForms
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frm_menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu principal";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);

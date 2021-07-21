@@ -14,5 +14,7 @@ namespace Projeto_Vendas_WinForms
         {
             InitializeComponent();
         }
+
+   
     }
 }
