@@ -5,6 +5,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Projeto_Vendas_WinForms</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>01 estoque.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
